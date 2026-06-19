@@ -1,0 +1,17 @@
+{
+  "name": "whiteboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "build": "npm install --prefix client && npm run build --prefix client && npm install --prefix server",
+    "start": "NODE_ENV=production npm start --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
